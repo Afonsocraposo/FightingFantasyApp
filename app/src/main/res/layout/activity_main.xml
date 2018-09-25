@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textDice"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dice1"
+        app:layout_constraintEnd_toStartOf="@+id/dice2"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutPlay" />
+
+    <Button
+        android:id="@+id/dice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dice2"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayoutPlay"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutPlay" />
+
+    <TextView
+        android:id="@+id/textAbilita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textAbilita"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/dice1" />
+
+    <TextView
+        android:id="@+id/textResistenza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textResistenza"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice2" />
+
+    <TextView
+        android:id="@+id/textFortuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textFortuna"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/dice2" />
+
+    <TextView
+        android:id="@+id/valueAbilita"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textAbilita"
+        app:layout_constraintTop_toBottomOf="@+id/textAbilita" />
+
+    <TextView
+        android:id="@+id/valueResistenza"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/textResistenza" />
+
+    <TextView
+        android:id="@+id/valueFortuna"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textFortuna"
+        app:layout_constraintTop_toBottomOf="@+id/textFortuna" />
+
+    <TextView
+        android:id="@+id/textOro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textOro"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/listEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResistenzaPlus" />
+
+    <TextView
+        android:id="@+id/valueOro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textOro"
+        app:layout_constraintTop_toBottomOf="@+id/textOro" />
+
+    <TextView
+        android:id="@+id/textTesoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textTesoro"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textOro"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOroMinus" />
+
+    <TextView
+        android:id="@+id/valueTesoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textTesoro"
+        app:layout_constraintTop_toBottomOf="@+id/textTesoro" />
+
+    <TextView
+        android:id="@+id/textProvviste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/textProvviste"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textTesoro"
+        app:layout_constraintTop_toBottomOf="@+id/valueTesoro" />
+
+    <TextView
+        android:id="@+id/valueProvviste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="@+id/textProvviste"
+        app:layout_constraintTop_toBottomOf="@+id/textProvviste" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listEquipa"
+        android:layout_width="128dp"
+        android:layout_height="192dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toStartOf="@+id/dice2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbilitaPlus" />
+
+    <Button
+        android:id="@+id/buttonAbilitaPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/valueAbilita"
+        app:layout_constraintTop_toBottomOf="@+id/valueAbilita" />
+
+    <Button
+        android:id="@+id/buttonAbilitaMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMinus"
+        app:layout_constraintEnd_toEndOf="@+id/valueAbilita"
+        app:layout_constraintTop_toBottomOf="@+id/valueAbilita" />
+
+    <Button
+        android:id="@+id/buttonResistenzaPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/textResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/valueResistenza" />
+
+    <Button
+        android:id="@+id/buttonResistenzaMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMinus"
+        app:layout_constraintEnd_toEndOf="@+id/valueResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/valueResistenza" />
+
+    <Button
+        android:id="@+id/buttonFortunaPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/valueFortuna"
+        app:layout_constraintTop_toBottomOf="@+id/valueFortuna" />
+
+    <Button
+        android:id="@+id/buttonFortunaMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMinus"
+        app:layout_constraintEnd_toEndOf="@+id/textFortuna"
+        app:layout_constraintTop_toBottomOf="@+id/valueFortuna" />
+
+    <Button
+        android:id="@+id/buttonCombat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textCombat"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProvvisteMinus" />
+
+    <Button
+        android:id="@+id/buttonMangiare"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMangiare"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textProvviste"
+        app:layout_constraintTop_toTopOf="@+id/textProvviste" />
+
+    <Button
+        android:id="@+id/buttonProvvisteMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMinus"
+        app:layout_constraintEnd_toEndOf="@+id/textProvviste"
+        app:layout_constraintTop_toBottomOf="@+id/valueProvviste" />
+
+    <Button
+        android:id="@+id/buttonProvvistePlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/textProvviste"
+        app:layout_constraintTop_toBottomOf="@+id/valueProvviste" />
+
+    <Button
+        android:id="@+id/buttonEditTesoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintBottom_toTopOf="@+id/valueTesoro"
+        app:layout_constraintStart_toEndOf="@+id/textTesoro" />
+
+    <Button
+        android:id="@+id/buttonOroPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/valueOro"
+        app:layout_constraintTop_toBottomOf="@+id/valueOro" />
+
+    <Button
+        android:id="@+id/buttonOroMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textMinus"
+        app:layout_constraintStart_toStartOf="@+id/valueOro"
+        app:layout_constraintTop_toBottomOf="@+id/valueOro" />
+
+    <Button
+        android:id="@+id/buttonEquipaAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/textPlus"
+        app:layout_constraintStart_toStartOf="@+id/listEquipa"
+        app:layout_constraintTop_toBottomOf="@+id/listEquipa" />
+
+
+</android.support.constraint.ConstraintLayout>

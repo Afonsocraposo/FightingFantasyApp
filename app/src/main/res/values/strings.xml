@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fighting Fantasy</string>
+    <string name="dice1">1 dado</string>
+    <string name="dice2">2 dadi</string>
+    <string name="textAbilita">Abilita:</string>
+    <string name="textResistenza">Resistenza:</string>
+    <string name="textFortuna">Fortuna:</string>
+    <string name="textOro">Oro:</string>
+    <string name="textTesoro">Tesoro:</string>
+    <string name="textProvviste">Provviste:</string>
+    <string name="textPlus">+</string>
+    <string name="textMinus">-</string>
+    <string name="textMangiare">Mangiare</string>
+    <string name="textCombat">Combattimento</string>
+    <string name="insertQuantity">Insert quantity</string>
+    <string name="insert_amount">Insert amount:</string>
+    <string name="amount">Amount</string>
+    <string name="item">Item</string>
+    <string name="insert_item">Insert item:</string>
+    <string name="are_you_sure_you_wanna_remove">Are you sure you wanna remove this?</string>
+    <string name="eroe">Eroe</string>
+    <string name="mostro">Mostro</string>
+    <string name="combattere">Combattere</string>
+    <string name="usare_la_fortuna">Usare la fortuna</string>
+    <string name="fuggire">Fuggire</string>
+
+</resources>

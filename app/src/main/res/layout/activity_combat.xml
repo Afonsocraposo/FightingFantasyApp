@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="570dp"
+    tools:context=".CombatActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textDice"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textAbilita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/textAbilita"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textResistenza"
+        app:layout_constraintTop_toTopOf="@+id/textResistenza" />
+
+    <TextView
+        android:id="@+id/textResistenza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textResistenza"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPlayer" />
+
+    <TextView
+        android:id="@+id/textFortuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/textFortuna"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textResistenza"
+        app:layout_constraintTop_toTopOf="@+id/textResistenza" />
+
+    <TextView
+        android:id="@+id/valueAbilita"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textAbilita"
+        app:layout_constraintTop_toBottomOf="@+id/textAbilita" />
+
+    <TextView
+        android:id="@+id/valueResistenza"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textResistenza"
+        app:layout_constraintTop_toBottomOf="@+id/textResistenza" />
+
+    <TextView
+        android:id="@+id/valueFortuna"
+        android:layout_width="53dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textFortuna"
+        app:layout_constraintTop_toBottomOf="@+id/textFortuna" />
+
+    <TextView
+        android:id="@+id/textAbilitaEnem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/textAbilita"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textResistenzaEnem"
+        app:layout_constraintTop_toTopOf="@+id/textResistenzaEnem" />
+
+    <TextView
+        android:id="@+id/textResistenzaEnem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textResistenza"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnemy" />
+
+    <TextView
+        android:id="@+id/valueAbilitaEnem"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textAbilitaEnem"
+        app:layout_constraintTop_toBottomOf="@+id/textAbilitaEnem" />
+
+    <TextView
+        android:id="@+id/valueResistenzaEnem"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textResistenzaEnem"
+        app:layout_constraintTop_toBottomOf="@+id/textResistenzaEnem" />
+
+    <TextView
+        android:id="@+id/textPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="171dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/eroe"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayoutPlay" />
+
+    <TextView
+        android:id="@+id/textEnemy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/mostro"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCombattere" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutEnem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayoutPlay"
+        app:layout_constraintTop_toBottomOf="@+id/valueResistenzaEnem">
+
+        <TextView
+            android:id="@+id/textDiceEnem"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonCombattere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="134dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/combattere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueResistenza" />
+
+    <Button
+        android:id="@+id/buttonUsareFortuna"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="42dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/usare_la_fortuna"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/textFortuna"
+        app:layout_constraintStart_toEndOf="@+id/textPlayer" />
+
+    <Button
+        android:id="@+id/buttonFuggire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/fuggire"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
